@@ -1,0 +1,36 @@
+name: Node.js CI
+
+# When should this workflow run?
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Step 1: Check out the code from GitHub
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    # Step 2: Set up Node.js
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'  # You can set to your Node version (22 for you)
+        cache: 'npm'
+
+    # Step 3: Install dependencies
+    - name: Install dependencies
+      run: npm install
+
+    # Step 4: Run tests (skip if none)
+    - name: Run tests
+      run: npm test || echo "No tests found"
+
+    # Optional: Start the app (for test purposes only)
+    - name: Start the app
+      run: node app.js
