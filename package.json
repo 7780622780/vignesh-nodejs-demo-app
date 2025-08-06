@@ -3,15 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-<<<<<<< HEAD
   "start": "node index.js",
   "test": "jest"
 },
-=======
     "start": "node index.js",
     "test": "echo \"No tests specified\" && exit 0"
   },
->>>>>>> d9d64a8 (Trigger CI/CD test)
   "repository": {
     "type": "git",
     "url": "git+https://github.com/7780622780/vignesh-nodejs-demo-app.git"
