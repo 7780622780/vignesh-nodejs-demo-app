@@ -1,12 +1,26 @@
 {
   "name": "nodejs-demo-app",
   "version": "1.0.0",
-  "main": "notepad app.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "start": "node index.js",
+  "test": "echo \"No tests specified\" && exit 0"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/7780622780/vignesh-nodejs-demo-app.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "bugs": {
+    "url": "https://github.com/7780622780/vignesh-nodejs-demo-app/issues"
+  },
+  "homepage": "https://github.com/7780622780/vignesh-nodejs-demo-app#readme",
+  "description": "",
+  "dependencies": {
+  "express": "^4.18.2"
+  }
 }
+
+
