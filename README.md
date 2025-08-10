@@ -38,5 +38,5 @@ This repository implements **Task 1: Automate Code Deployment Using CI/CD Pipeli
 ## Run locally
 1. Clone repo:
    ```bash
-   git clone https://github.com/<vigneshvv1003@gmail.com>/vignesh-nodejs-demo-app.git
+   git clone https://github.com/vigneshvv1003@gmail.com/vignesh-nodejs-demo-app.git
    cd vignesh-nodejs-demo-app
